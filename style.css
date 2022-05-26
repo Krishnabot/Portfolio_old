@@ -1,6 +1,6 @@
 body {
   margin: 1% 10% auto 10%;
-  background-color: #dfe4ec;
+  background-color: #dfdbdb;
 }
 
 header {
@@ -9,7 +9,7 @@ header {
   width: 415px;
   margin: auto;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 #logo {
@@ -28,6 +28,10 @@ header {
   padding: 20px;
 }
 
+#hamburger-menu > a > i {
+  color: #6070ff;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -35,10 +39,12 @@ header {
   padding: 100px 20px;
   width: 375px;
   height: 604px;
-  background-image: url(/src/header-background-mobile.png);
+  background-image: url(/src/header-mobile.svg);
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
+  border-bottom-left-radius: 50px;
 }
 
 #hello {
@@ -85,12 +91,12 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  height: 20px;
-  width: 20px;
-  margin-right: 10px;
   text-decoration: none;
 }
 
-.intro > div:last-child > a > i {
-  color: #352f2f;
+.social-icons {
+  color: #48566e;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
 }
