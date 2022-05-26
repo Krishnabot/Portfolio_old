@@ -19,3 +19,55 @@ header {
     line-height: 20px;
     color: #6070FF;
 }
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 20px;
+    width: 375px;
+    height: 604px;
+    margin: auto;
+}
+
+#hello {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 20px;
+    width: 375px;
+    height: 604px;
+    margin: auto;
+}
+
+#hello {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+
+}
+
+#aboutme {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    padding-top: 20px;
+}
