@@ -2,6 +2,10 @@
 
 # Portfolio: setup and mobile version skeleton
 
+- Mobile Version Skeleton  shows mobile skeleton version of my portfolio.
+- I have used flexbox and backgound svg image to alignment and background customisation. 
+- All the social media icons leads to my real profiles. 
+
 ## Learning objectives
 - Understand how to parse a Figma design to create a UI.
 - Flexbox to place elements in the page.
@@ -15,8 +19,9 @@
 - HTML
 - CSS
 
+# Project preview
 
-
+![](src/Screen%20Shot%202022-05-26%20at%2018.08.32.png)
 
 ## Author
 
