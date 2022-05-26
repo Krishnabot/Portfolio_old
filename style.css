@@ -1,0 +1,21 @@
+body {
+    margin: 5% 10% auto 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 375px;
+    margin: auto;
+}
+
+#logo {
+    width: 76px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070FF;
+}
