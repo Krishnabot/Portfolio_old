@@ -39,10 +39,10 @@ header {
   padding: 100px 20px;
   width: 375px;
   height: 604px;
-  background-image: url(/src/header-mobile.svg);
+  background-image: url(/src/header-shapes\ mobile@2x.png);
   background-color: white;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin: auto;
   border-bottom-left-radius: 50px;
 }
@@ -94,9 +94,9 @@ a:active {
   text-decoration: none;
 }
 
-.social-icons {
+div > a > img {
   color: #48566e;
-  height: 20px;
-  width: 20px;
-  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
 }
