@@ -1,13 +1,17 @@
 body {
-    margin: 5% 10% auto 10%;
-    background-color: #f7f8fd;
+    margin: 1% 10% auto 10%;
+    background-color: #dfe4ec;
+
+
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    width: 375px;
+    width: 415px;
     margin: auto;
+    background-color: white;
+    border-radius: 10px;
 
 }
 
@@ -20,6 +24,11 @@ header {
     font-size: 18px;
     line-height: 20px;
     color: #6070FF;
+    padding: 20px
+}
+
+#hamburger-menu {
+    padding: 20px;
 }
 
 .intro {
@@ -29,8 +38,10 @@ header {
     padding: 100px 20px;
     width: 375px;
     height: 604px;
+    background-image: url(/src/header-background-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: auto;
-    background-color: #f7f8fd;
 }
 
 #hello {
@@ -96,14 +107,17 @@ div:last-child {
 
 }
 
-a {
+a:link,
+a:visited,
+a:hover,
+a:active {
     height: 20px;
     width: 20px;
     margin-right: 10px;
-    text-decoration: #344563;
+    text-decoration: none;
 }
 
-div:last-child.a.i {
-    color: #344563;
+.intro>div:last-child>a>i {
+    color: #352f2f;
 
 }
