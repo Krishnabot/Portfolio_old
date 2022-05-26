@@ -1,5 +1,6 @@
 body {
     margin: 5% 10% auto 10%;
+    background-color: #f7f8fd;
 }
 
 header {
@@ -7,6 +8,7 @@ header {
     justify-content: space-between;
     width: 375px;
     margin: auto;
+
 }
 
 #logo {
@@ -28,6 +30,7 @@ header {
     width: 375px;
     height: 604px;
     margin: auto;
+    background-color: #f7f8fd;
 }
 
 #hello {
@@ -97,9 +100,10 @@ a {
     height: 20px;
     width: 20px;
     margin-right: 10px;
-    text-decoration: none;
+    text-decoration: #344563;
 }
 
-i {
+div:last-child.a.i {
     color: #344563;
+
 }
