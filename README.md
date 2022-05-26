@@ -21,7 +21,7 @@
 
 # Project preview
 
-![](src/Screen%20Shot%202022-05-26%20at%2018.08.32.png)
+![](src/Screen%20Shot.png)
 
 ## Author
 
