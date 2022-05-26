@@ -3,10 +3,10 @@
 # Portfolio: setup and mobile version skeleton
 
 ## Learning objectives
->Understand how to parse a Figma design to create a UI.
->Flexbox to place elements in the page.
->Build a personal portfolio site.
->Use images and backgrounds to enhance the look of the website.
+- Understand how to parse a Figma design to create a UI.
+- Flexbox to place elements in the page.
+- Build a personal portfolio site.
+- Use images and backgrounds to enhance the look of the website.
 
 
 
