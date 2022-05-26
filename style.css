@@ -1,6 +1,5 @@
 body {
   margin: 1% 10% auto 10%;
-  background-color: #dfdbdb;
 }
 
 header {
@@ -8,7 +7,7 @@ header {
   justify-content: space-between;
   width: 415px;
   margin: auto;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px 10px 0 0;
 }
 
@@ -39,12 +38,13 @@ header {
   padding: 100px 20px;
   width: 375px;
   height: 604px;
-  background-image: url(/src/header-shapes\ mobile@2x.png);
+  background-image: url(./src/header-shapes\ mobile@2x.png);
   background-color: white;
   background-repeat: no-repeat;
   background-size: contain;
   margin: auto;
   border-bottom-left-radius: 50px;
+  margin-top: 25px;
 }
 
 #hello {
@@ -94,9 +94,17 @@ a:active {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  justify-items: start;
+  margin-left: -40px;
+}
+
+ul > li {
+  margin-right: 20px;
+}
+
 div > a > img {
   color: #48566e;
-  height: 30px;
-  width: 30px;
-  margin-right: 20px;
 }
