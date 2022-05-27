@@ -1,6 +1,38 @@
 body {
   margin: 1% 10% auto 10%;
 }
+p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+input {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+}
+a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
 
 header {
   display: flex;
@@ -14,13 +46,12 @@ header {
 #logo {
   width: 76px;
   height: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
   padding: 20px;
+  margin-top: 15px;
 }
 
 #hamburger-menu {
@@ -52,19 +83,7 @@ header {
   padding: 16px;
 }
 
-#hello {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-}
-
 #aboutme {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -77,9 +96,8 @@ header {
   flex-direction: column;
 }
 
-div:nth-child(3) {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
+.first-page > div > p,
+.about-myself > div > p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -129,8 +147,6 @@ div > a > img {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -152,8 +168,6 @@ h2 {
 .projects > ul > li {
   width: 88px;
   height: 16px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -173,8 +187,6 @@ h2 {
 .projects > p {
   width: 295px;
   height: 76px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -210,6 +222,18 @@ h2 {
   background: #FFFFFF;
 }
 
+.about-myself > p {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+/* Neutrals/N600 */
+
+color: #344563;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -224,8 +248,6 @@ h2 {
 }
 
 .skills div p {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -247,8 +269,6 @@ h2 {
   height: 35px;
   background: #F7F7F9;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   border: 1px solid #FFFFFF;
@@ -283,8 +303,6 @@ height: 779px;
 border-top-left-radius: 50px;
 }
 .contact > p:first-child {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -292,8 +310,6 @@ border-top-left-radius: 50px;
 }
 
 .contact > p:nth-child(2) {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -325,8 +341,6 @@ border-top-left-radius: 50px;
 .get-it-touch {
 width: 140px;
 height: 40px;
-font-family: 'Poppins';
-font-style: normal;
 font-weight: 500;
 font-size: 17px;
 line-height: 24px;
