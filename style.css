@@ -1,12 +1,8 @@
 body {
   margin: 1% 10% auto 10%;
 }
-p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-}
 
-h2 {
+p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
@@ -15,6 +11,7 @@ li {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
+
 input {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -29,6 +26,7 @@ h1 {
   display: flex;
   align-items: center;
 }
+
 a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -68,7 +66,7 @@ header {
   align-items: flex-start;
   width: 375px;
   margin: auto;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .first-page {
@@ -94,6 +92,22 @@ header {
 .social-media {
   display: flex;
   flex-direction: column;
+}
+
+.projects > p {
+  width: 295px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.about-myself > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .first-page > div > p,
@@ -136,7 +150,7 @@ div > a > img {
 .projects {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #fff;
   box-sizing: border-box;
   padding: 16px;
   height: 575px;
@@ -147,10 +161,12 @@ div > a > img {
 }
 
 h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .description > ul {
@@ -171,7 +187,23 @@ h2 {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
+  color: #7a869a;
+}
+
+.skills > ul > li {
+  width: 303px;
+  height: 35px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid #fff;
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 1% 50%;
+  padding-left: 45px;
+  padding-top: 10px;
+  margin-bottom: 5px;
 }
 
 .projects > ul > li:first-child {
@@ -184,61 +216,40 @@ h2 {
   color: #344563;
 }
 
-.projects > p {
-  width: 295px;
-  height: 76px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #344563;
-}
-
 .tags > button {
   align-items: center;
   padding: 4px 12px;
-  background-color: #EBEBFF;
-  border: 1px solid #6070FF;
-  color: #6070FF;
+  background-color: #ebebff;
+  border: 1px solid #6070ff;
+  color: #6070ff;
   border-radius: 8px;
   margin-left: 5px;
 }
 
-.projects > div:last-child > button,
-.about-myself button {
+.about-myself button,
+.projects > div:last-child > button {
   align-items: center;
   padding: 12px;
   gap: 10px;
   position: absolute;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: white;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .about-myself {
   position: relative;
   border-top-right-radius: 35px;
   padding: 50px 50px 70px 20px;
-  background: #FFFFFF;
-}
-
-.about-myself > p {
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
-
-
-/* Neutrals/N600 */
-
-color: #344563;
+  background: #fff;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  background-color: rgb(255, 255, 255) ;
+  background-color: rgb(255, 255, 255);
 }
 
 .skills div {
@@ -264,29 +275,14 @@ color: #344563;
   margin-left: -40px;
 }
 
-.skills > ul > li {
-  width: 303px;
-  height: 35px;
-  background: #F7F7F9;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 15px;
-  border: 1px solid #FFFFFF;
-  background-repeat: no-repeat;
-  background-size: 35px;
-  background-position: 1% 50%;
-
-  padding-left: 45px ;
-  padding-top: 10px;
-  margin-bottom: 5px;
-}
 .skills > ul > li:first-child {
   background-image: url(./src/js.png);
 }
 
-.skills > ul > li:nth-last-child(2){
+.skills > ul > li:nth-last-child(2) {
   background-image: url(./src/html.png);
 }
+
 .skills > ul > li:last-child {
   background-image: url(./src/css.png);
 }
@@ -294,14 +290,15 @@ color: #344563;
 .contact {
   display: flex;
   flex-direction: column;
-  background-color: #6070FF;
+  background-color: #6070ff;
   background-image: url(./src/header-shapes\ mobile@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 375px;
-height: 779px;
-border-top-left-radius: 50px;
+  height: 779px;
+  border-top-left-radius: 50px;
 }
+
 .contact > p:first-child {
   font-weight: 700;
   font-size: 40px;
@@ -321,8 +318,9 @@ border-top-left-radius: 50px;
 .contact-form {
   display: flex;
   flex-direction: column;
-  padding: 10px 15px 10px 15px
+  padding: 10px 15px 10px 15px;
 }
+
 .contact-form > input {
   border-radius: 5px;
   border: none;
@@ -334,14 +332,17 @@ border-top-left-radius: 50px;
   height: 40px;
   padding-left: 20px;
 }
+
 .message {
   height: 100px;
   padding-left: 20px;
 }
+
 .get-it-touch {
-width: 140px;
-height: 40px;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-margin-top: 10px;
+  width: 140px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 10px;
+}
