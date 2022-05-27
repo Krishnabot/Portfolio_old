@@ -99,7 +99,8 @@ a:active {
   text-decoration: none;
 }
 
-.first-page ul {
+.first-page ul,
+.about-myself ul {
   list-style: none;
   display: flex;
   justify-items: start;
@@ -117,7 +118,6 @@ div > a > img {
 .projects {
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
   background-color: #FFFFFF;
   box-sizing: border-box;
   padding: 16px;
@@ -152,7 +152,7 @@ h2 {
 .projects > ul > li {
   width: 88px;
   height: 16px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -188,11 +188,11 @@ h2 {
   border: 1px solid #6070FF;
   color: #6070FF;
   border-radius: 8px;
-  border: none;
   margin-left: 5px;
 }
 
-.projects > div:last-child > button {
+.projects > div:last-child > button,
+.about-myself button {
   align-items: center;
   padding: 12px;
   gap: 10px;
@@ -200,5 +200,62 @@ h2 {
   border: 1px solid #6070FF;
   border-radius: 8px;
   background-color: white;
-    color: #6070FF;
+  color: #6070FF;
+}
+
+.about-myself {
+  position: relative;
+  border-top-right-radius: 35px;
+  padding: 50px 50px 70px 20px;
+  background: #FFFFFF;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.skills div {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.skills div p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.fa-solid {
+  margin-top: 17px;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills > ul > li {
+  width: 303px;
+  height: 50px;
+  background: #F7F7F9;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid #FFFFFF
+}
+.skills > ul > li img {
+  height: 35px;
+  width: 35px;
+  padding: 10px;
+}
+h3 {
+  font-size: ;
 }
