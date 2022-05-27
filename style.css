@@ -31,27 +31,32 @@ header {
   color: #6070ff;
 }
 
-.intro {
+.portfolio {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 100px 20px;
   width: 375px;
-  height: 604px;
-  background-image: url(./src/header-shapes\ mobile@2x.png);
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: contain;
   margin: auto;
+  background-color: #E5E5E5;
+}
+
+.first-page {
+  background-image: url(./src/header-shapes\ mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-bottom-left-radius: 50px;
-  margin-top: 25px;
+  margin-bottom: 50px;
+  background-color: white;
+  width: 350px;
+  height: 500px;
+  padding: 16px;
 }
 
 #hello {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -94,7 +99,7 @@ a:active {
   text-decoration: none;
 }
 
-ul {
+.first-page ul {
   list-style: none;
   display: flex;
   justify-items: start;
@@ -107,4 +112,93 @@ ul > li {
 
 div > a > img {
   color: #48566e;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 16px;
+  height: 575px;
+  width: 327px;
+  border-radius: 5px;
+  position: relative;
+  margin: 15px auto 15px auto;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+}
+
+.description > ul {
+  list-style: none;
+  display: flex;
+}
+
+.projects > ul {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  margin-left: -40px;
+}
+
+.projects > ul > li {
+  width: 88px;
+  height: 16px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7A869A;
+}
+
+.projects > ul > li:first-child {
+  list-style: none;
+  width: 55px;
+  height: 16px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.projects > p {
+  width: 295px;
+  height: 76px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.tags > button {
+  align-items: center;
+  padding: 4px 12px;
+  background-color: #EBEBFF;
+  border: 1px solid #6070FF;
+  color: #6070FF;
+  border-radius: 8px;
+  border: none;
+  margin-left: 5px;
+}
+
+.projects > div:last-child > button {
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  position: absolute;
+  border: 1px solid #6070FF;
+  border-radius: 8px;
+  background-color: white;
+    color: #6070FF;
 }
