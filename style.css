@@ -69,7 +69,7 @@ header {
   background-color: #e5e5e5;
 }
 
-.first-page {
+.landing-page {
   background-image: url(./src/header-shapes\ mobile@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,7 +110,7 @@ header {
   color: #344563;
 }
 
-.first-page > div > p,
+.landing-page > div > p,
 .about-myself > div > p {
   font-weight: 500;
   font-size: 16px;
@@ -131,12 +131,20 @@ a:active {
   text-decoration: none;
 }
 
-.first-page ul,
+.landing-page ul,
 .about-myself ul {
   list-style: none;
   display: flex;
   justify-items: start;
   margin-left: -40px;
+}
+
+.work {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+  grid-gap: 15px;
+  margin-bottom: 20px;
 }
 
 ul > li {
@@ -153,11 +161,10 @@ div > a > img {
   background-color: #fff;
   box-sizing: border-box;
   padding: 16px;
-  height: 575px;
-  width: 327px;
+  height: 620px;
+  width: 340px;
   border-radius: 5px;
-  position: relative;
-  margin: 15px auto 15px auto;
+  margin-left: 17px;
 }
 
 h2 {
@@ -169,25 +176,23 @@ h2 {
   color: #172b4d;
 }
 
-.description > ul {
-  list-style: none;
+.company > ul,
+.tags > ul {
   display: flex;
-}
-
-.projects > ul {
-  display: flex;
-  flex-direction: row;
-  justify-items: start;
   margin-left: -40px;
 }
 
-.projects > ul > li {
+.company > ul > li {
   width: 88px;
   height: 16px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
+}
+
+.tags > ul {
+  list-style: none;
 }
 
 .skills > ul > li {
@@ -206,7 +211,7 @@ h2 {
   margin-bottom: 5px;
 }
 
-.projects > ul > li:first-child {
+.company > ul > li:first-child {
   list-style: none;
   width: 55px;
   height: 16px;
@@ -216,11 +221,13 @@ h2 {
   color: #344563;
 }
 
-.tags > button {
+
+
+.tags > ul > li > button {
   align-items: center;
   padding: 4px 12px;
   background-color: #ebebff;
-  border: 1px solid #6070ff;
+  border: none;
   color: #6070ff;
   border-radius: 8px;
   margin-left: 5px;
@@ -236,6 +243,18 @@ h2 {
   border-radius: 8px;
   background-color: white;
   color: #6070ff;
+}
+
+
+.about-myself button {
+  color: #396df2;
+
+}
+
+.about-myself > button:hover,
+.projects > div:last-child > button:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 .about-myself {
