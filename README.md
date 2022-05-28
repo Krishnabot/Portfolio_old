@@ -22,6 +22,8 @@
 # Project preview
 
 ![](src/ScreenShot.png)
+![](src/snapshor-2.png)
+![](src/snapshot-1.png)
 
 ## Author
 
