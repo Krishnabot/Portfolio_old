@@ -179,6 +179,7 @@ h2 {
 .company > ul,
 .tags > ul {
   display: flex;
+  flex-direction: row;
   margin-left: -40px;
 }
 
@@ -189,13 +190,14 @@ h2 {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
+
 }
 
 .tags > ul {
   list-style: none;
 }
 
-.skills > ul > li {
+.skills > ul > li:first-child > ul > li {
   width: 303px;
   height: 35px;
   background: #f7f7f9;
@@ -211,7 +213,13 @@ h2 {
   margin-bottom: 5px;
 }
 
-.company > ul > li:first-child {
+.skill-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 45px;
+}
+
+.company > ul > li:first-child > ul > li:first-child{
   list-style: none;
   width: 55px;
   height: 16px;
@@ -220,8 +228,6 @@ h2 {
   line-height: 16px;
   color: #344563;
 }
-
-
 
 .tags > ul > li > button {
   align-items: center;
@@ -233,22 +239,15 @@ h2 {
   margin-left: 5px;
 }
 
-.about-myself button,
+.about-myself > button,
 .projects > div:last-child > button {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  position: absolute;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: white;
   color: #6070ff;
-}
-
-
-.about-myself button {
-  color: #396df2;
-
 }
 
 .about-myself > button:hover,
@@ -258,10 +257,14 @@ h2 {
 }
 
 .about-myself {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   border-top-right-radius: 35px;
   padding: 50px 50px 70px 20px;
   background: #fff;
+}
+.about-myself > button {
+  width: 120px;
 }
 
 .skills {
@@ -271,13 +274,20 @@ h2 {
   background-color: rgb(255, 255, 255);
 }
 
-.skills div {
+.skills  ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+}
+
+.skills > ul > li:first-child > ul > li {
   display: flex;
   justify-content: space-between;
   width: 300px;
 }
 
-.skills div p {
+.skills > ul > li > p {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -287,22 +297,17 @@ h2 {
   margin-top: 17px;
 }
 
-.skills ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  margin-left: -40px;
-}
 
-.skills > ul > li:first-child {
+
+.skills > ul > li:first-child > ul > li:first-child {
   background-image: url(./src/js.png);
 }
 
-.skills > ul > li:nth-last-child(2) {
+.skills > ul > li:first-child > ul > li:nth-child(2) {
   background-image: url(./src/html.png);
 }
 
-.skills > ul > li:last-child {
+.skills > ul > li:first-child > ul > li:last-child {
   background-image: url(./src/css.png);
 }
 
