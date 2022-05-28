@@ -183,7 +183,17 @@ h2 {
   margin-left: -40px;
 }
 
-.company > ul > li {
+.company > ul > li:first-child {
+  list-style: none;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #151a23;
+}
+
+.company > ul > li:nth-child(2),
+.company > ul > li:last-child {
   width: 88px;
   height: 16px;
   font-weight: 600;
