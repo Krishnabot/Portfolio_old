@@ -356,7 +356,7 @@ h2 {
 .contact-form {
   display: flex;
   flex-direction: column;
-  padding: 10px 15px 10px 15px;
+  margin: 10px 15px 10px 15px;
 }
 
 .contact-form > input {
@@ -372,8 +372,7 @@ h2 {
 }
 
 .message {
-  height: 100px;
-  padding-left: 20px;
+  padding: 10px 15px 90px 15px;
 }
 
 .get-it-touch {
