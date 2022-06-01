@@ -294,6 +294,7 @@ h2 {
   flex-direction: column;
   padding: 16px;
   background-color: rgb(255, 255, 255);
+  padding-bottom: 50px;
 }
 
 .skills ul {
@@ -326,31 +327,38 @@ h2 {
 }
 
 .contact {
+  background-color: #fff;
+}
+
+.white-container {
   display: flex;
   flex-direction: column;
   background-color: #6070ff;
-  background-image: url(./src/header-shapes\ mobile@2x.png);
+  background-image: url(./src/contact-form-shapes-mobile.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 100%;
   width: 375px;
   height: 779px;
   border-top-left-radius: 50px;
 }
 
-.contact > p:first-child {
+.white-container > p:first-child {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
+  margin-top: 100px;
+  color: #fff;
 }
 
-.contact > p:nth-child(2) {
+.white-container > p:nth-child(2) {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   left: 24px;
   text-align: center;
   padding: 20px;
+  color: #fff;
 }
 
 .contact-form {
@@ -387,4 +395,15 @@ h2 {
 .get-it-touch:hover {
   background-color: #6070ff;
   color: #fff;
+}
+
+.get-it-touch:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+hr {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 30%;
 }
