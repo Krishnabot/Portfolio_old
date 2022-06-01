@@ -373,6 +373,12 @@ h2 {
   margin-bottom: 15px;
 }
 
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+}
+
 .name,
 .email {
   height: 40px;
