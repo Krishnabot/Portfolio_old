@@ -531,8 +531,7 @@ hr {
   }
 
   .background-container {
-    background-image: url(./src/Header-bg.png);
-    background-size: cover;
+    background-image: url(./src/contact-form-background-shapes.png);
     width: 100%;
     background-color:  #6070ff;
     border-top-left-radius: 50px;
