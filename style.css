@@ -1,21 +1,18 @@
-p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
+body {
+  margin: 1% 10% auto 10%;
 }
 
-li {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-}
-
-input {
+p,
+li,
+h1,
+h2,
+input,
+a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 35px;
   line-height: 52px;
@@ -31,7 +28,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
- /* width: 415px; */
+  width: 415px;
   margin: auto;
   background-color: rgb(255, 255, 255);
   border-radius: 10px 10px 0 0;
@@ -76,7 +73,7 @@ nav > ul {
   border-bottom-left-radius: 50px;
   margin-bottom: 50px;
   background-color: white;
-  width: 350px;
+  width: 375px;
   height: 500px;
   padding: 16px;
 }
@@ -131,7 +128,7 @@ a:active {
   list-style: none;
   display: flex;
   justify-items: start;
-  *margin-left: -40px;
+  margin-left: -40px;
 }
 
 .work {
@@ -161,14 +158,13 @@ div > a > img {
   border-radius: 5px;
   margin-left: 17px;
 }
-.projects > div:last-child{
+
+.projects > div:last-child {
   display: flex;
   flex-direction: column;
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -414,6 +410,12 @@ hr {
 }
 
 @media (min-width: 768px) {
+ body {
+   margin: auto;
+ }
+  header {
+    width: 100%;
+  }
   nav > a {
     display: none;
   }
@@ -456,9 +458,9 @@ hr {
     margin-top: 20%;
   }
 
-  .social-media-icons {
-    margin-left: 20%;
-  }
+ .landing-page ul {
+  margin-left: 20%;
+}
 
   .work {
     margin:auto;
