@@ -166,6 +166,10 @@ div > a > img {
   border-radius: 5px;
   margin-left: 17px;
 }
+.projects > div:last-child{
+  display: flex;
+  flex-direction: column;
+}
 
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -266,7 +270,7 @@ h2 {
   color: #fff;
 }
 
-.projects > div:last-child > button {
+.projects > div:last-child > div:last-child > button {
   align-items: center;
   padding: 12px;
   gap: 10px;
@@ -276,7 +280,7 @@ h2 {
   color: #6070ff;
 }
 
-.projects > div:last-child > button:hover {
+.projects > div:last-child > div:last-child > button:hover {
   background-color: #6070ff;
   color: #fff;
 }
@@ -448,10 +452,43 @@ hr {
   .landing-page p {
     margin: 1px 20% 5px 23%;
   }
+
   .landing-page h1 {
     margin-top: 20%;
   }
+
   .social-media-icons {
     margin-left: 19%;
+  }
+  .work {
+    margin:auto;
+    grid-gap: 35px
+    
+  }
+  .projects {
+    width: 1000px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+  }
+
+  .projects > div {
+    height: 450px;
+    width: 500px;
+  }
+
+  .projects > div:first-child > img {
+    height: 400px;
+    width: 500px;
+  }
+
+  .projects > div:last-child {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .projects:nth-child(2),
+  .projects:last-child {
+    flex-direction: row-reverse;
   }
 }
