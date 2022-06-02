@@ -11,8 +11,14 @@
 </head>
 <body>
     <header>
-        <a href="#" id="logo">My Logo</a>
-        <nav id="hamburger-menu"><a><i class="fa-solid fa-bars"></i></a></nav>
+        <a href="#" class="logo">My Logo</a>
+        <nav id="hamburger-menu"><a><i class="fa-solid fa-bars"></i></a>
+            <ul>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="portfolio">
         <section class="landing-page"  >
@@ -20,7 +26,7 @@
 Glad to see you!</h1>
         <p id="aboutme">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <div><p>LET'S CONNECT</p></div>
-        <ul >
+        <ul class="social-media-icons" >
         <li><a href="https://twitter.com/last_matrix" target="_blank" rel="noopener"><img src="src/twitter.svg" alt="Twitter Icon"></a></li>
         <li><a href="https://www.linkedin.com/in/krishna-prasad-acharya-3596bb130/" target="_blank" rel="noopener"><img src="src/Linkedin-icon.svg" alt="Linkedin icon"></a></li>
         <li><a href="#"><img src="src/mail.svg" alt="Mail Icon"></a></li>
@@ -34,7 +40,8 @@ Glad to see you!</h1>
             <div>
             <img src="./src/project-1.jpeg" alt="project snapshot">
             </div>
-            <h2>Tonic</h2>
+            <div>
+                <h2>Tonic</h2>
             <div class="company">
                 <ul>
                 <li>Canopy</li>
@@ -55,10 +62,17 @@ Glad to see you!</h1>
             <div>
                 <button class="see-projects" type="button">See Project</button>
             </div>
+
+            </div>
+            
         </div>
         <div class ="projects">
-            <img src="./src/portfolio-snapshot2.jpeg" alt="project snapshot">
-            <h2>Multi-Post Stories</h2>
+            <div>
+                <img src="./src/portfolio-snapshot2.jpeg" alt="project snapshot">
+
+            </div>
+            <div>
+                 <h2>Multi-Post Stories</h2>
             <div class="company">
                 <ul>
                 <li>Canopy</li>
@@ -80,11 +94,16 @@ Glad to see you!</h1>
             <div>
                 <button type="button">See Project</button>
             </div>
+            </div>
+           
             
         </div>
         <div class ="projects">
+            <div>
             <img src="./src/portfolio-snapshot3.jpeg" alt="project snapshot">
-            <h2>Tonic</h2>
+            </div>
+            <div>
+                 <h2>Tonic</h2>
             <div class="company">
                 <ul>
                 <li>Canopy</li>
@@ -105,11 +124,17 @@ Glad to see you!</h1>
             <div>
                 <button type="button">See Project</button>
             </div>
+            </div>
+           
             
         </div>
         <div class ="projects">
-             <img src="./src/portfolio-snapshot4.jpeg" alt="project snapshot">
-            <h2>Multi-Post Stories</h2>
+            <div>
+                             <img src="./src/portfolio-snapshot4.jpeg" alt="project snapshot">
+
+            </div>
+            <div>
+                <h2>Multi-Post Stories</h2>
             <div class="company">
                 <ul>
                 <li>Canopy</li>
@@ -130,15 +155,18 @@ Glad to see you!</h1>
             <div>
                 <button type="button">See Project</button>
             </div>
+            </div>
+            
             
         </div>
         </section>     
        
-        <section class="about-myself">
-            <h2>About <br> Myself </h2>
+        <section class="about-skill">
+            <div class="about-myself">
+                <h2>About <br> Myself </h2>
             <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             <div><p>LET'S CONNECT</p></div>
-            <ul>
+            <ul class="social-media-icons-below">
                 <li><a href="https://twitter.com/last_matrix" target="_blank" rel="noopener"><img src="src/twitter.svg" alt="Twitter Icon"></a></li>
                 <li><a href="https://www.linkedin.com/in/krishna-prasad-acharya-3596bb130/" target="_blank" rel="noopener"><img src="src/Linkedin-icon.svg" alt="Linkedin icon"></a></li>
                 <li><a href="#"><img src="src/mail.svg" alt="Mail Icon"></a></li>
@@ -147,12 +175,9 @@ Glad to see you!</h1>
         
             </ul>
         <button type="button">Get my resume</button>
-
-        </section>
-        
-        <section class="skills">
-
-            <ul>
+            </div>
+            <div class="skills">
+                <ul>
                 <li>
                     <div class="skill-wrap"><p>Language</p> 
                    <i class="fa-solid fa-angle-down"></i></div>
@@ -180,12 +205,18 @@ Glad to see you!</h1>
                    
                 </li>
             </ul>
+            </div>
+            
+
+            
 
         </section>
        
 
         <section class="contact">
-            <div class="white-container">
+            <div class="background-container">
+                <div class="white-container">
+
                  <p>Contact Me</p>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
                 <form class="contact-form" action="https://formspree.io/f/xoqrrprd" method="post"> 
@@ -196,6 +227,8 @@ Glad to see you!</h1>
             </form>
             <hr>
             </div>
+            </div>
+            
             
                 
         </section>
@@ -205,3 +238,4 @@ Glad to see you!</h1>
     
 </body>
 </html>
+
