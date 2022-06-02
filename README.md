@@ -1,14 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: setup and mobile version skeleton
+# Portfolio
 
 - Mobile Version Skeleton  shows mobile skeleton version of my portfolio.
-- I have used flexbox and backgound svg image to alignment and background customisation. 
+- Desktop Version ```@media (min-width: 768px)``` shows desktop version of portfolio 
+- I have used flexbox grid  to align items.
+-I have used background svg image and colour to customise.
 - All the social media icons leads to my real profiles. 
 
 ## Learning objectives
 - Understand how to parse a Figma design to create a UI.
-- Flexbox to place elements in the page.
+- Flexbox /Gridbox to place elements in the page.
 - Build a personal portfolio site.
 - Use images and backgrounds to enhance the look of the website.
 
@@ -21,9 +23,11 @@
 
 # Project preview
 
-![](src/ScreenShot.png)
-![](src/snapshor-2.png)
-![](src/snapshot-1.png)
+![](./src/ScreenShot.png)
+![](./src/snapshor-2.png)
+![](./src/snapshot-1.png)
+![](./src/snapshot-2.png)
+![](./src/contact-snapshot.png)
 
 ## Author
 
@@ -46,9 +50,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+-Figma Template [Figma template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=34%3A848)
 
 ## 📝 License
 

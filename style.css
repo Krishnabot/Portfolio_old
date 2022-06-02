@@ -410,12 +410,14 @@ hr {
 }
 
 @media (min-width: 768px) {
- body {
-   margin: auto;
- }
+  body {
+    margin: auto;
+  }
+
   header {
     width: 100%;
   }
+
   nav > a {
     display: none;
   }
@@ -458,13 +460,13 @@ hr {
     margin-top: 20%;
   }
 
- .landing-page ul {
-  margin-left: 20%;
-}
+  .landing-page ul {
+    margin-left: 20%;
+  }
 
   .work {
-    margin:auto;
-    grid-gap: 35px
+    margin: auto;
+    grid-gap: 35px;
   }
 
   .projects {
@@ -501,32 +503,36 @@ hr {
     min-width: 100%;
     margin-top: 50px;
   }
+
   .about-myself {
     border-radius: 0;
     padding-left: 50px;
   }
-  .skills{
+
+  .skills {
     border-top-right-radius: 50px;
     padding-top: 10%;
   }
+
   .skills > ul {
     margin-left: 20px;
   }
-.skills > ul > li > ul {
-  display: flex;
-  flex-direction: row;
-  
-}
 
-.skills > ul > li:first-child > ul > li {
-  width: 90px;
-  background-position: top;
-  padding-top:40px;
+  .skills > ul > li > ul {
+    display: flex;
+    flex-direction: row;
+  }
 
-}
-  .social-media-icons-below{
+  .skills > ul > li:first-child > ul > li {
+    width: 90px;
+    background-position: top;
+    padding-top: 40px;
+  }
+
+  .social-media-icons-below {
     margin-left: -40px;
   }
+
   .contact {
     background-color: #fff;
     width: 100%;
@@ -535,19 +541,20 @@ hr {
   .background-container {
     background-image: url(./src/contact-form-background-shapes.png);
     width: 100%;
-    background-color:  #6070ff;
+    background-color: #6070ff;
     border-top-left-radius: 50px;
   }
 
   .white-container {
     width: 575px;
     background-image: none;
-    border-radius: 0px;
+    border-radius: 0;
     margin: auto;
   }
+
   .get-it-touch {
     margin: auto;
-    margin-top:20px ;
+    margin-top: 20px;
   }
 
   hr {
