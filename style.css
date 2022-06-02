@@ -136,7 +136,7 @@ a:active {
   list-style: none;
   display: flex;
   justify-items: start;
-  margin-left: -40px;
+  *margin-left: -40px;
 }
 
 .work {
@@ -415,9 +415,6 @@ hr {
 }
 
 @media (min-width: 768px) {
-  header {
-    bottom: 100px;
-  }
   nav > a {
     display: none;
   }
@@ -442,12 +439,19 @@ hr {
 
   .landing-page {
     width: 100%;
-    background-position: 50% 80%;
+    background-image: url(./src/Header-bg.png);
+    height: 916px;
+    background-size: contain;
   }
+
   .landing-page h1,
   .landing-page p {
-    margin: 1px 20% 5px 23% ;
+    margin: 1px 20% 5px 23%;
   }
-
+  .landing-page h1 {
+    margin-top: 20%;
+  }
+  .social-media-icons {
+    margin-left: 19%;
+  }
 }
-
