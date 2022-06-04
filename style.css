@@ -426,6 +426,22 @@ hr {
     margin-left: 150px;
   }
 
+    .logo,
+    nav>ul>li {
+      transition: transform 90ms;
+    }
+  
+    .logo:hover,
+    nav>ul>li:hover {
+      animation: scale 1s forwards;
+    }
+  
+    @keyframes scale {
+      100% {
+        transform: scale(1.5);
+      }
+    }
+    
   nav > ul {
     list-style: none;
     display: flex;
