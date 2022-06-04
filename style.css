@@ -1,5 +1,5 @@
 body {
-  margin: 1% 10% auto 10%;
+  margin: 0 10% auto 10%;
 }
 
 p,
@@ -382,6 +382,7 @@ h2 {
 
 .message {
   padding: 10px 15px 90px 15px;
+  border-radius: 5px;
 }
 
 .get-it-touch {
@@ -416,6 +417,16 @@ hr {
 
   header {
     width: 100%;
+    animation: header-load 600ms ease-out;
+  }
+  
+  @keyframes header-load {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
   nav > a {
@@ -426,30 +437,42 @@ hr {
     margin-left: 150px;
   }
 
-    .logo,
-    nav>ul>li {
-      transition: transform 90ms;
-    }
-  
-    .logo:hover,
-    nav>ul>li:hover {
-      animation: scale 1s forwards;
-    }
-  
-    @keyframes scale {
-      100% {
-        transform: scale(1.5);
-      }
-    }
-    
-  nav > ul {
-    list-style: none;
-    display: flex;
+  .logo,
+  nav > ul > li {
+    transition: transform 90ms;
   }
 
   nav > ul > li {
     color: #344563;
-    margin-right: 4rem;
+    margin: 0 4rem 10px auto;
+    padding: 10px;
+  }
+  
+  .logo:hover {
+    animation: rotate360 1s;
+  }
+
+  nav > ul > li:hover {
+    animation: scale 50ms forwards;
+    background-color: #65060644;
+    border-radius: 5px;
+  }
+
+  @keyframes rotate360 {
+    100%{
+      transform: rotate(360deg) scale(1.5);
+    }
+  }
+
+  @keyframes scale {
+    100% {
+    transform: scale(1.5);
+    }
+  }
+
+  nav > ul {
+    list-style: none;
+    display: flex;
   }
 
   nav > ul > li > a {
@@ -578,6 +601,20 @@ hr {
   .get-it-touch {
     margin: auto;
     margin-top: 20px;
+    box-shadow: inset 0 0 0 0;
+    transition: ease-out 0.3s;
+  }
+  .get-it-touch,
+  .tags > ul > li > button,
+  .about-myself > button {
+    
+  }
+
+  .get-it-touch:hover,
+  .tags > ul > li > button:hover,
+  .about-myself > button:hover { 
+    box-shadow: inset 140px 0 0 0 #6070ff;
+    border: 1px solid #fffs;
   }
 
   hr {
