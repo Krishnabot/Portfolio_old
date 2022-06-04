@@ -419,11 +419,12 @@ hr {
     width: 100%;
     animation: header-load 600ms ease-out;
   }
-  
+
   @keyframes header-load {
     0% {
       transform: translateY(-100%);
     }
+
     100% {
       transform: translateY(0);
     }
@@ -447,7 +448,7 @@ hr {
     margin: 0 4rem 10px auto;
     padding: 10px;
   }
-  
+
   .logo:hover {
     animation: rotate360 1s;
   }
@@ -459,14 +460,14 @@ hr {
   }
 
   @keyframes rotate360 {
-    100%{
+    100% {
       transform: rotate(360deg) scale(1.5);
     }
   }
 
   @keyframes scale {
     100% {
-    transform: scale(1.5);
+      transform: scale(1.5);
     }
   }
 
@@ -604,17 +605,12 @@ hr {
     box-shadow: inset 0 0 0 0;
     transition: ease-out 0.3s;
   }
-  .get-it-touch,
-  .tags > ul > li > button,
-  .about-myself > button {
-    
-  }
 
   .get-it-touch:hover,
-  .tags > ul > li > button:hover,
-  .about-myself > button:hover { 
+  .about-myself > button:hover,
+  .tags > ul > li > button:hover {
     box-shadow: inset 140px 0 0 0 #6070ff;
-    border: 1px solid #fffs;
+    border: 1px solid #fff;
   }
 
   hr {
