@@ -475,6 +475,12 @@ hr {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
+    transition: transform 1s;
+  }
+
+  .projects:hover {
+    transform: scale(1.1);
+    background-color: #becbe1;
   }
 
   .projects > div {
@@ -485,6 +491,7 @@ hr {
   .projects > div:first-child > img {
     height: 400px;
     width: 500px;
+    border-radius: 5%;
   }
 
   .projects > div:last-child {
