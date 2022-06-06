@@ -10,6 +10,7 @@
 - Nav bar has loading Animation.
 - Work section card has hover scale animation.
 - conatct form button has animaton. 
+- Completed Portfolio web page deployed with github page. 
 
 ## Learning objectives
 - Understand how to parse a Figma design to create a UI.
@@ -17,6 +18,7 @@
 - Build a personal portfolio site.
 - Use images and backgrounds to enhance the look of the website.
 - Use Animations to enhance the user experience and overall look of website. 
+- Learn to deploy github repos using github  page.
 
 
 
@@ -26,6 +28,7 @@
 - CSS
 
 # Project preview
+Live Demo of the project :- [Portfolio](https://krishnabot.github.io/Portfolio/)
 
 ![](./src/ScreenShot.png)
 ![](./src/snapshor-2.png)
