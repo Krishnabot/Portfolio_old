@@ -20,11 +20,6 @@ h1 {
   align-items: center;
 }
 
-a {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -45,17 +40,37 @@ header {
   margin-top: 15px;
 }
 
-nav > ul {
+.nav-menu {
   display: none;
 }
 
-#hamburger-menu {
+
+nav-item {
+  margin: 16px 0;
+
+}
+
+
+
+nav {
   padding: 20px;
 }
 
-#hamburger-menu > a > i {
-  color: #6070ff;
+.hamburger {
+  display: block;
+
 }
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
 
 .portfolio {
   display: flex;
@@ -409,7 +424,7 @@ hr {
   border-radius: 5px;
   width: 30%;
 }
-
+ 
 @media (min-width: 768px) {
   body {
     margin: auto;
@@ -430,8 +445,9 @@ hr {
     }
   }
 
-  nav > a {
+  .hamburger {
     display: none;
+    cursor: pointer;
   }
 
   .logo {
@@ -471,9 +487,15 @@ hr {
     }
   }
 
-  nav > ul {
+
+  .nav-menu {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 0;
+
   }
 
   nav > ul > li > a {
