@@ -1,5 +1,7 @@
-body {
-  margin: 0 10% auto 10%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 p,
@@ -21,47 +23,34 @@ h1 {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  width: 415px;
+  width: 375px;
   margin: auto;
+  padding: 2rem 0 5rem 0;
   background-color: rgb(255, 255, 255);
   border-radius: 10px 10px 0 0;
 }
 
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .logo {
-  width: 76px;
-  height: 20px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
   color: #6070ff;
-  padding: 20px;
-  margin-top: 15px;
 }
 
 .nav-menu {
   display: none;
 }
 
-
-nav-item {
-  margin: 16px 0;
-
-}
-
-
-
-nav {
-  padding: 20px;
-}
-
 .hamburger {
   display: block;
-
 }
 
-.bar{
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -70,7 +59,6 @@ nav {
   transition: all 0.3s ease-in-out;
   background-color: black;
 }
-
 
 .portfolio {
   display: flex;
@@ -143,7 +131,7 @@ a:active {
   list-style: none;
   display: flex;
   justify-items: start;
-  margin-left: -40px;
+  margin-top: 1rem;
 }
 
 .work {
@@ -190,7 +178,7 @@ h2 {
 .tags > ul {
   display: flex;
   flex-direction: row;
-  margin-left: -40px;
+  margin: 2rem 0 2rem 0;
 }
 
 .company > ul > li:first-child {
@@ -268,7 +256,6 @@ h2 {
   border: none;
   color: #6070ff;
   border-radius: 8px;
-  margin-left: 5px;
 }
 
 .about-myself > button:hover {
@@ -295,14 +282,13 @@ h2 {
   display: flex;
   flex-direction: column;
   border-top-right-radius: 35px;
-  padding: 50px 50px 70px 20px;
+  padding: 50px 50px 70px 5px;
   background: #fff;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
-  padding: 16px;
   background-color: rgb(255, 255, 255);
   padding-bottom: 50px;
 }
@@ -311,7 +297,6 @@ h2 {
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin-left: -40px;
 }
 
 .skills > ul > li > p {
@@ -422,9 +407,10 @@ h2 {
 hr {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
-  width: 30%;
+  width: 40%;
+  margin: auto;
 }
- 
+
 @media (min-width: 768px) {
   body {
     margin: auto;
@@ -487,7 +473,6 @@ hr {
     }
   }
 
-
   .nav-menu {
     list-style: none;
     display: flex;
@@ -495,7 +480,6 @@ hr {
     position: relative;
     top: 0;
     left: 0;
-
   }
 
   nav > ul > li > a {
@@ -523,7 +507,7 @@ hr {
   }
 
   .landing-page ul {
-    margin-left: 20%;
+    margin: 20px 20% 5px 23%;
   }
 
   .work {
@@ -593,13 +577,11 @@ hr {
   }
 
   .skills > ul > li:first-child > ul > li {
-    width: 90px;
+    width: 100px;
+    height: 90px;
     background-position: top;
     padding-top: 40px;
-  }
-
-  .social-media-icons-below {
-    margin-left: -40px;
+    padding-right: 15px;
   }
 
   .contact {
