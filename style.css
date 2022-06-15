@@ -39,7 +39,6 @@ header {
   height: 100%;
   width: 100%;
   margin-top: 0;
-
 }
 
 .logo {
@@ -55,7 +54,7 @@ header {
   left: -100%;
   width: 100%;
   transition: 0.4s;
-  background-color: rgb(96,112,255, 0.95);
+  background-color: rgb(96, 112, 255, 0.95);
   height: 100%;
   padding-left: 60px;
   padding-top: 100px;
@@ -482,10 +481,8 @@ hr {
   nav > ul > li {
     transition: transform 90ms;
     font-size: 15px;
-    color:#344563 ;
+    color: #344563;
   }
-
-
 
   nav > ul > li {
     color: #344563;
