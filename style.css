@@ -25,7 +25,6 @@ h1 {
 header {
   width: 375px;
   margin: auto;
-  padding: 2rem 0 5rem 0;
   background-color: rgb(255, 255, 255);
   border-radius: 10px 10px 0 0;
 }
@@ -34,6 +33,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.nav-bar.active {
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+
 }
 
 .logo {
@@ -47,21 +53,21 @@ header {
   position: fixed;
   flex-direction: column;
   left: -100%;
-  top: 75px;
-  text-align: center;
   width: 100%;
   transition: 0.4s;
+  background-color: rgb(96,112,255, 0.95);
+  height: 100%;
+  padding-left: 60px;
+  padding-top: 100px;
 }
 
 .nav-menu.active {
   left: 0;
 }
 
-.nav-item.active .portfolio-link,
-.about-link,
-.contact-link {
-  font-size: 20px;
-  border-bottom: 2px solid #ebebff;
+.nav-item.active {
+  font-size: 40px;
+  color: #fff;
 }
 
 .hamburger {
@@ -473,7 +479,8 @@ hr {
   .logo,
   nav > ul > li {
     transition: transform 90ms;
-  }
+    font-size: 15px;
+    color:#344563 ;  }
 
   nav > ul > li {
     color: #344563;
@@ -510,6 +517,7 @@ hr {
     position: relative;
     top: 0;
     left: 0;
+    background-color: #fff;
   }
 
   nav > ul > li > a {

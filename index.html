@@ -15,9 +15,9 @@
         <nav class="nav-bar">
              <a href="#" class="logo">My Logo</a>
             <ul class="nav-menu">
-                <li class="nav-item"><a class = "portfolio-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class = "about-link" href="#about">About</a></li>
-                <li class="nav-item"><a class = "contact-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class = "nav-link portfolio-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a onclick="myFunction()" class =  " nav-link about-link" href="#about">About</a></li>
+                <li class="nav-item"><a class = "nav-link contact-link" href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -26,7 +26,7 @@
             </div>
         </nav>
     </header>
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
         <section class="landing-page"  >
             <h1>I’m Krishna <br>
 Glad to see you!</h1>
@@ -41,7 +41,7 @@ Glad to see you!</h1>
         
         </ul>
         </section>  
-        <section id="portfolio" class="work">
+        <section  class="work">
         <div class="projects">
             <div>
             <img src="./src/project-1.jpeg" alt="project snapshot">
