@@ -44,7 +44,7 @@ header {
 
 .nav-menu {
   list-style: none;
-  position:fixed;
+  position: fixed;
   flex-direction: column;
   left: -100%;
   top: 75px;
@@ -57,7 +57,9 @@ header {
   left: 0;
 }
 
-.nav-item.active .nav-link:first-child, .nav-link:nth-child(2), .nav-link:last-child {
+.nav-item.active .portfolio-link,
+.about-link,
+.contact-link {
   font-size: 20px;
   border-bottom: 2px solid #ebebff;
 }
