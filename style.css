@@ -473,19 +473,23 @@ hr {
   }
 
   .logo {
-    margin-left: 150px;
+    text-align: center;
+    margin: 70px auto;
+    width: 30%;
   }
 
   .logo,
   nav > ul > li {
     transition: transform 90ms;
     font-size: 15px;
-    color:#344563 ;  }
+    color:#344563 ;
+  }
+
+
 
   nav > ul > li {
     color: #344563;
     margin: 0 4rem 10px auto;
-    padding: 10px;
   }
 
   .logo:hover {
