@@ -11,6 +11,10 @@
 - Work section card has hover scale animation.
 - conatct form button has animaton. 
 - Completed Portfolio web page deployed with github page. 
+- When the user clicks the hamburger button, the mobile menu appears.
+- When the user clicks the close (X) button, the mobile menu disappears.
+- When the user clicks any of the mobile menu options, the mobile menu disappears.
+- When the user clicks any of the mobile menu options, a correct part of the page is displayed.
 
 ## Learning objectives
 - Understand how to parse a Figma design to create a UI.
@@ -19,6 +23,7 @@
 - Use images and backgrounds to enhance the look of the website.
 - Use Animations to enhance the user experience and overall look of website. 
 - Learn to deploy github repos using github  page.
+- Learn DOM 
 
 
 
@@ -26,6 +31,12 @@
 
 - HTML
 - CSS
+- Javascript
+
+## Prerequisites
+- Setup Git and Github
+- Install Npm and Linters
+- Download example presets and icons
 
 # Project preview
 Live Demo of the project :- [Portfolio](https://krishnabot.github.io/Portfolio/)
@@ -46,9 +57,6 @@ Live Demo of the project :- [Portfolio](https://krishnabot.github.io/Portfolio/)
 
 **Collaboration Partner**
 
-👤 **Solomon**
-
-- GitHub: [@Solomon](https://github.com/solog0039)
 
 ## 🤝 Contributing
 

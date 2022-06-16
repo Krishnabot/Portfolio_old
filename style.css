@@ -20,12 +20,11 @@ h1 {
   line-height: 52px;
   display: flex;
   align-items: center;
+  padding-top: 96px;
 }
 
 header {
-  width: 375px;
-  margin: auto;
-  padding: 2rem 0 5rem 0;
+  padding: 30px 23px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px 10px 0 0;
 }
@@ -36,6 +35,12 @@ header {
   justify-content: space-between;
 }
 
+.nav-bar.active {
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+}
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -43,7 +48,28 @@ header {
 }
 
 .nav-menu {
-  display: none;
+  list-style: none;
+  position: fixed;
+  flex-direction: column;
+  left: -100%;
+  width: 100%;
+  transition: 0.4s;
+  background-color: rgb(23 44 235 / 75%);
+  height: 100%;
+  padding-left: 30px;
+  padding-top: 100px;
+  backdrop-filter: blur(6px);
+}
+
+.nav-menu.active {
+  left: 0;
+  top: 0;
+}
+
+.nav-link {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .hamburger {
@@ -57,7 +83,23 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: black;
+  background-color: #6070ff;
+}
+
+.hamburger.active .bar {
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:last-child {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .portfolio {
@@ -77,7 +119,7 @@ header {
   margin-bottom: 50px;
   background-color: white;
   width: 375px;
-  height: 500px;
+  height: 600px;
   padding: 16px;
 }
 
@@ -282,7 +324,7 @@ h2 {
   display: flex;
   flex-direction: column;
   border-top-right-radius: 35px;
-  padding: 50px 50px 70px 5px;
+  padding: 50px 50px 70px 25px;
   background: #fff;
 }
 
@@ -437,7 +479,8 @@ hr {
   }
 
   .logo {
-    margin-left: 150px;
+    height: 20px;
+    margin-left: 120px;
   }
 
   .logo,
@@ -448,7 +491,6 @@ hr {
   nav > ul > li {
     color: #344563;
     margin: 0 4rem 10px auto;
-    padding: 10px;
   }
 
   .logo:hover {
@@ -457,7 +499,6 @@ hr {
 
   nav > ul > li:hover {
     animation: scale 50ms forwards;
-    background-color: #65060644;
     border-radius: 5px;
   }
 
@@ -469,7 +510,7 @@ hr {
 
   @keyframes scale {
     100% {
-      transform: scale(1.5);
+      transform: scale(2);
     }
   }
 
@@ -479,11 +520,21 @@ hr {
     flex-direction: row;
     position: relative;
     top: 0;
+    margin-bottom: 70px;
     left: 0;
+    background-color: #fff;
+    width: auto;
+    padding-top: 0;
+  }
+
+  .nav-link {
+    color: #344563;
+    font-size: 15px;
   }
 
   nav > ul > li > a {
     cursor: pointer;
+    color: #344563;
   }
 
   .portfolio {
@@ -503,7 +554,7 @@ hr {
   }
 
   .landing-page h1 {
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .landing-page ul {
@@ -611,8 +662,7 @@ hr {
   }
 
   .get-it-touch:hover,
-  .about-myself > button:hover,
-  .tags > ul > li > button:hover {
+  .about-myself > button:hover {
     box-shadow: inset 140px 0 0 0 #6070ff;
     border: 1px solid #fff;
   }
