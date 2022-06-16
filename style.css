@@ -20,11 +20,11 @@ h1 {
   line-height: 52px;
   display: flex;
   align-items: center;
+  padding-top: 96px;
 }
 
 header {
-  width: 375px;
-  margin: auto;
+  padding: 30px 23px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px 10px 0 0;
 }
@@ -54,14 +54,16 @@ header {
   left: -100%;
   width: 100%;
   transition: 0.4s;
-  background-color: rgb(96, 112, 255, 0.95);
+  background-color: rgb(23 44 235 / 75%);
   height: 100%;
-  padding-left: 60px;
+  padding-left: 30px;
   padding-top: 100px;
+  backdrop-filter: blur(6px);
 }
 
 .nav-menu.active {
   left: 0;
+  top: 0;
 }
 
 .nav-link {
@@ -117,7 +119,7 @@ header {
   margin-bottom: 50px;
   background-color: white;
   width: 375px;
-  height: 500px;
+  height: 600px;
   padding: 16px;
 }
 
@@ -477,7 +479,8 @@ hr {
   }
 
   .logo {
-    margin: auto 90px;
+    height: 20px;
+    margin-left: 120px;
   }
 
   .logo,
@@ -496,7 +499,6 @@ hr {
 
   nav > ul > li:hover {
     animation: scale 50ms forwards;
-    background-color: #65060644;
     border-radius: 5px;
   }
 
@@ -508,7 +510,7 @@ hr {
 
   @keyframes scale {
     100% {
-      transform: scale(1.5);
+      transform: scale(2);
     }
   }
 
@@ -522,6 +524,10 @@ hr {
     left: 0;
     background-color: #fff;
     width: auto;
+  }
+
+  .nav-menu {
+    padding-top: 0;
   }
 
   .nav-link {
@@ -551,7 +557,7 @@ hr {
   }
 
   .landing-page h1 {
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .landing-page ul {
@@ -659,8 +665,7 @@ hr {
   }
 
   .get-it-touch:hover,
-  .about-myself > button:hover,
-  .tags > ul > li > button:hover {
+  .about-myself > button:hover {
     box-shadow: inset 140px 0 0 0 #6070ff;
     border: 1px solid #fff;
   }
