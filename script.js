@@ -25,12 +25,12 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navBar.classList.remove('active');
   navLink.classList.remove('active');
 }));
-/*------------Section for Pop up--------------  */
+/* ------------Section for Pop up--------------  */
 
-document.querySelector(".submit").addEventListener("click", (event) => {
-    let email = document.querySelector(".email");
-    if (email.checkValidity(/[A-Z]/.test(email))) {
-      event.preventDefault();
-      email.setCustomValidity("Email must be lowercase. Please Try agin");
-    }
-  });
+document.querySelector('.submit').addEventListener('click', (event) => {
+  const email = document.querySelector('.email');
+  if (email.checkValidity(/[A-Z]/.test(email))) {
+    event.preventDefault();
+    email.setCustomValidity('Email must be lowercase. Please Try agin');
+  }
+});
