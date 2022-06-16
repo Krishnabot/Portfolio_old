@@ -54,7 +54,7 @@ header {
   left: -100%;
   width: 100%;
   transition: 0.4s;
-  background-color: rgb(96, 112, 255, 0.95);
+  background-color: rgb(96,112,255, 0.95);
   height: 100%;
   padding-left: 60px;
   padding-top: 100px;
@@ -64,9 +64,10 @@ header {
   left: 0;
 }
 
-.nav-item.active {
+.nav-link {
   font-size: 40px;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .hamburger {
@@ -80,7 +81,11 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: black;
+  background-color: #6070ff;
+}
+
+.hamburger.active .bar {
+  background-color: #fff;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -472,16 +477,12 @@ hr {
   }
 
   .logo {
-    text-align: center;
-    margin: 70px auto;
-    width: 30%;
+    margin: auto 90px;
   }
 
   .logo,
   nav > ul > li {
     transition: transform 90ms;
-    font-size: 15px;
-    color: #344563;
   }
 
   nav > ul > li {
@@ -517,12 +518,20 @@ hr {
     flex-direction: row;
     position: relative;
     top: 0;
+    margin-bottom: 70px;
     left: 0;
     background-color: #fff;
+    width: auto;
+  }
+
+  .nav-link {
+    color: #344563;
+    font-size: 15px;
   }
 
   nav > ul > li > a {
     cursor: pointer;
+    color: #344563;
   }
 
   .portfolio {
