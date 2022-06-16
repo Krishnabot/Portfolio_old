@@ -31,6 +31,12 @@
 
 - HTML
 - CSS
+- Javascript
+
+## Prerequisites
+- Setup Git and Github
+- Install Npm and Linters
+- Download example presets and icons
 
 # Project preview
 Live Demo of the project :- [Portfolio](https://krishnabot.github.io/Portfolio/)
@@ -51,9 +57,6 @@ Live Demo of the project :- [Portfolio](https://krishnabot.github.io/Portfolio/)
 
 **Collaboration Partner**
 
-👤 **Solomon**
-
-- GitHub: [@Solomon](https://github.com/solog0039)
 
 ## 🤝 Contributing
 
