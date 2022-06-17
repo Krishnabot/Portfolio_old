@@ -26,11 +26,10 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navLink.classList.remove('active');
 }));
 /* ------------Section for Pop up--------------  */
-
 const form = document.querySelector('.contact-form');
 const email = document.querySelector('.email');
 form.addEventListener('submit', (event) => {
-  if (email.checkValidity(/[A-Z]/.test(email))) {
+  if (email.value !== email.value.toLowerCase()) {
     event.preventDefault();
     document
       .querySelector('.submit')
