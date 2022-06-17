@@ -25,7 +25,8 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navBar.classList.remove('active');
   navLink.classList.remove('active');
 }));
-/* ------------Section for Pop up--------------  */
+/* ------------Pop up--------------  */
+/* ------------Form Validation-----*/
 const email = document.querySelector('.email');
 const button = document.querySelector('.submit');
 const errorMessege = document.querySelector('.error');
@@ -40,3 +41,15 @@ const validate = (e) => {
   }
 };
 button.addEventListener('click', validate);
+
+/* ------------ save data in local storage---------*/
+
+const form = document.querySelector('.contact-form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const myFormData = new FormData(event.target);
+  const myformDataObj = Object.fromEntries(myFormData.entries());
+  const myJSON = JSON.stringify(myformDataObj);
+  localStorage.setItem('storedLocalData', myJSON);
+  console.log(myJSON);
+});
