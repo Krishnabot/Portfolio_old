@@ -18,6 +18,8 @@
 - When the user submits the form,It checks if the email is in lower case.
 - If the validation is OK, the form is sent.
 - If the validation is not OK, It shows an error message to the user near the submit button      informing them of the error and the form is not sent.
+- When the user changes the content of any input field, the data is saved to the local storage.
+- When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
 
 ## Learning objectives
 - Understand how to parse a Figma design to create a UI.
@@ -27,10 +29,12 @@
 - Use Animations to enhance the user experience and overall look of website. 
 - Learn to deploy github repos using github  page.
 - Learn DOM 
+- Learn web storage API
 
 
 
 ## Built With
+
 
 - HTML
 - CSS
