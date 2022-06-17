@@ -43,13 +43,40 @@ const validate = (e) => {
 button.addEventListener('click', validate);
 
 /* ------------ save data in local storage---------*/
+const username = document.querySelector('.name');
+const useremail = document.querySelector('.email');
+const usermessege = document.querySelector('.message');
+function getFormData() {
+  const myJSON = {
+    name: username.value,
+    email: useremail.value,
+    message: usermessege.value,
+  };
 
-const form = document.querySelector('.contact-form');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const myFormData = new FormData(event.target);
-  const myformDataObj = Object.fromEntries(myFormData.entries());
-  const myJSON = JSON.stringify(myformDataObj);
-  localStorage.setItem('storedLocalData', myJSON);
-  console.log(myJSON);
+  localStorage.setItem('myJSON', JSON.stringify(myJSON));
+}
+username.addEventListener('change', () => {
+  getFormData();
 });
+useremail.addEventListener('change', () => {
+  getFormData();
+});
+usermessege.addEventListener('change', () => {
+  getFormData();
+});
+
+/* ----------- recieve data from local storage------*/
+
+function loadData() {
+  if (localStorage.getItem('myJSON') !== null) {
+    const input = localStorage.getItem('myJSON');
+    const inputParse = JSON.parse(input);
+    username.value = inputParse.name;
+    useremail.value = inputParse.email;
+    usermessege.value = inputParse.message;
+  }
+}
+
+window.onload = () => {
+  loadData();
+};
