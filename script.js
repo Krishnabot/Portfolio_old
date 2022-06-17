@@ -26,13 +26,17 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navLink.classList.remove('active');
 }));
 /* ------------Section for Pop up--------------  */
-const form = document.querySelector('.contact-form');
 const email = document.querySelector('.email');
-form.addEventListener('submit', (event) => {
+const button = document.querySelector('.submit');
+const errorMessege = document.querySelector('.error');
+
+const validate = (e) => {
   if (email.value !== email.value.toLowerCase()) {
-    event.preventDefault();
-    document
-      .querySelector('.submit')
-      .setCustomValidity('Email must be lowercase. Please Try agin');
+    errorMessege.innerHTML = 'Email must be lowercase. Please Try again';
+    errorMessege.style.display = 'block';
+    e.preventDefault();
+  } else {
+    errorMessege.style.display = 'none';
   }
-});
+};
+button.addEventListener('click', validate);
