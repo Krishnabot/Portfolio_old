@@ -15,6 +15,9 @@
 - When the user clicks the close (X) button, the mobile menu disappears.
 - When the user clicks any of the mobile menu options, the mobile menu disappears.
 - When the user clicks any of the mobile menu options, a correct part of the page is displayed.
+- When the user submits the form,It checks if the email is in lower case.
+- If the validation is OK, the form is sent.
+- If the validation is not OK, It shows an error message to the user near the submit button      informing them of the error and the form is not sent.
 
 ## Learning objectives
 - Understand how to parse a Figma design to create a UI.
@@ -36,7 +39,6 @@
 ## Prerequisites
 - Setup Git and Github
 - Install Npm and Linters
-- Download example presets and icons
 
 # Project preview
 Live Demo of the project :- [Portfolio](https://krishnabot.github.io/Portfolio/)
@@ -46,6 +48,7 @@ Live Demo of the project :- [Portfolio](https://krishnabot.github.io/Portfolio/)
 ![](./src/snapshot-1.png)
 ![](./src/snapshot-2.png)
 ![](./src/contact-snapshot.png)
+![](./src/validation-error-snapshot.png)
 
 ## Author
 

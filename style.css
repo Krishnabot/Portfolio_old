@@ -453,6 +453,16 @@ hr {
   margin: auto;
 }
 
+.error {
+  text-align: center;
+  font-size: larger;
+  background-color: rgba(255, 3, 3, 0.9);
+  border-radius: 5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+
 @media (min-width: 768px) {
   body {
     margin: auto;

@@ -25,3 +25,18 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navBar.classList.remove('active');
   navLink.classList.remove('active');
 }));
+/* ------------Section for Pop up--------------  */
+const email = document.querySelector('.email');
+const button = document.querySelector('.submit');
+const errorMessege = document.querySelector('.error');
+
+const validate = (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    errorMessege.innerHTML = 'Email must be lowercase. Please Try again';
+    errorMessege.style.display = 'block';
+    e.preventDefault();
+  } else {
+    errorMessege.style.display = 'none';
+  }
+};
+button.addEventListener('click', validate);
