@@ -27,10 +27,13 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 }));
 /* ------------Section for Pop up--------------  */
 
-document.querySelector('.submit').addEventListener('click', (event) => {
-  const email = document.querySelector('.email');
+const form = document.querySelector('.contact-form');
+const email = document.querySelector('.email');
+form.addEventListener('submit', (event) => {
   if (email.checkValidity(/[A-Z]/.test(email))) {
     event.preventDefault();
-    email.setCustomValidity('Email must be lowercase. Please Try agin');
+    document
+      .querySelector('.submit')
+      .setCustomValidity('Email must be lowercase. Please Try agin');
   }
 });
