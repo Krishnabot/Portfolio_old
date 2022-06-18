@@ -20,6 +20,9 @@
 - If the validation is not OK, It shows an error message to the user near the submit button      informing them of the error and the form is not sent.
 - When the user changes the content of any input field, the data is saved to the local storage.
 - When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
+- When the user clicks (or taps) the button to check project details, the popup with details about the project appears.
+- When the user clicks (or taps) the close (X) button, the popup disappears.
+- projects section is created dynamically using the information stored in that JavaScript object
 
 ## Learning objectives
 - Understand how to parse a Figma design to create a UI.
