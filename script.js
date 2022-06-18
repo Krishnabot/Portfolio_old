@@ -127,6 +127,7 @@ function closePopUp() {
   document.getElementById('pop-up').classList.remove('pop-up');
 }
 
+// eslint-disable-next-line no-unused-vars
 function showPopUp(cardcount) {
   let paragraphDescription = '';
 
