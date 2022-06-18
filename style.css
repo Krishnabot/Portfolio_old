@@ -208,6 +208,10 @@ div > a > img {
   display: flex;
   flex-direction: column;
 }
+ .card-picture {
+  height: 100%;
+  width: 100%;
+ }
 
 h2 {
   font-weight: 700;
@@ -305,7 +309,7 @@ h2 {
   color: #fff;
 }
 
-.projects > div:last-child > div:last-child > button {
+.see-projects {
   align-items: center;
   padding: 12px;
   gap: 10px;
@@ -315,7 +319,7 @@ h2 {
   color: #6070ff;
 }
 
-.projects > div:last-child > div:last-child > button:hover {
+.see-projects:hover {
   background-color: #6070ff;
   color: #fff;
 }
@@ -462,6 +466,82 @@ hr {
   margin-right: 20%;
   margin-top: 20px;
 }
+
+/* ------PopUp for Mobile --------- */
+
+  #pop-up.pop-up {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    padding-top: 12%;
+    
+  }
+
+  .work-content.pop-up {
+    filter: blur(4px);
+  }
+
+  body.pop-up {
+    overflow-y: hidden;
+  }
+
+  #pop-up {
+    overflow-y: scroll;
+    display: none;
+  }
+  #pop-up .card {
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 4%;
+  }
+
+
+  #pop-up i.close-pop-up {
+    color: #67798e;
+    mix-blend-mode: multiply;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 80%;
+    padding-top: 0;
+  }
+.popup-img {
+  background-color: #efeff1;
+}
+
+.popup-img > img{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 5%;
+}
+
+.pop-up-columns {
+  margin-top: 1rem;
+}
+#pop-up .tags ul li  {
+  display: none;
+}
+
+#pop-up .tags ul li:nth-child(-n+3){
+  display: list-item;
+}
+
+  .pop-up-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  .pop-up-buttons > button {
+    width: 150px;
+  }
+
+  #pop-up .fa-solid {
+    margin-top: auto;
+  }
 
 @media (min-width: 768px) {
   body {
@@ -680,4 +760,44 @@ hr {
   hr {
     display: none;
   }
+  /* ---------POP Up Desktop ------------*/
+  
+ #pop-up .card {
+    max-width: 90%;
+  }
+
+  body.pop-up {
+    overflow-y: hidden;
+  }
+
+  #pop-up {
+    overflow-y: scroll;
+  }
+
+  #pop-up i.close-pop-up {
+    position: absolute;
+    right: 10%;
+    color: #67798e;
+    mix-blend-mode: multiply;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .pop-up-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+}
+#pop-up .tags > ul > li {
+  display: block;
+}
+
+ #pop-up-left-column{
+  margin-right: 5px;
+ }
+  .pop-up-buttons {
+    display: flex;
+    gap: 50px;
+    height: 40px;
+  }
+}
+
 }
