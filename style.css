@@ -533,7 +533,6 @@ body.pop-up {
   width: 100%;
   object-fit: cover;
   margin: auto;
-
 }
 
 .pop-up-columns {
@@ -816,7 +815,8 @@ body.pop-up {
 
   #pop-up .tags ul li:nth-child(-n+3) {
     display: block;
-}
+  }
+
   .left-column {
     margin-right: 5px;
   }
