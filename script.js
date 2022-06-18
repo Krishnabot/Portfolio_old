@@ -127,6 +127,74 @@ function closePopUp() {
   document.getElementById("pop-up").classList.remove("pop-up");
 }
 
+function showPopUp(cardcount) {
+  let paragraphDescription = "";
+
+  if (window.screen.width >= 768) {
+    paragraphDescription = workData[cardcount].description;
+  } else {
+    paragraphDescription = workData[cardcount].short_description;
+  }
+
+  const devTag = myPopUpFunction(cardcount);
+
+  const popUpHtml = `
+<div id="pop-up">
+  <div class="pop-bckg">
+      <div class="card">
+            <div class="card-content">
+                <div>
+            <h2>${workData[cardcount].project_name}<i class="fa-solid fa-xmark close-pop-up" ></i></h2>
+                <div class="company">
+                <ul>
+                <li>Canopy</li>
+                <li>Back End Dev</li>
+                <li>2015</li>
+            </ul>
+            <div>
+              </div>
+            </div> 
+            </div>
+            <div class="popup-img">
+                <img class="card-picture" src="${workData[cardcount].feature_snapshot}"/>
+            </div>
+                    <div class="pop-up-columns">
+                        <div id="pop-up-left-column">
+                        <p class="card-description">${paragraphDescription}</p>
+                        </div>
+                        <div id="pop-up-right-column">
+                        <div class="tags">
+                <ul>
+                 ${devTag}
+            </ul>
+                          </div>  
+                        <div class="pr-languages">
+                          
+                               
+                          </div>  
+                        <div class="pop-up-buttons">
+                            <button class="see-projects"  type="button">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                            <button class="see-projects" type="button">See Source <i class="fa-brands fa-github"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div> 
+  </div>
+</div>
+`;
+
+  document.getElementById("pop-up-content").innerHTML = popUpHtml;
+  document.getElementsByTagName("body")[0].classList.add("pop-up");
+  document.getElementsByClassName("work-content")[0].classList.add("pop-up");
+  document.getElementById("pop-up").classList.add("pop-up");
+  document
+    .getElementsByClassName("close-pop-up")[0]
+    .addEventListener("click", () => {
+      closePopUp();
+    });
+}
+
 /* ------------Form Validation-----*/
 const email = document.querySelector('.email');
 const button = document.querySelector('.submit');
