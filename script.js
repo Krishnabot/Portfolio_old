@@ -26,6 +26,92 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navLink.classList.remove('active');
 }));
 /* ------------Pop up--------------  */
+const workData = [
+  {
+    project_name: "Tonic",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    short_description:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    feature_snapshot: "./src/project-1.jpeg",
+    technologies: ["html", "css", "javaScript", "github", "ruby", "Bootstrap"],
+    live_version: "https://www.portfolio.com/project1",
+    source_link: "https://www.github.com/rominana/tonic",
+  },
+
+  {
+    project_name: "Multi Post Stories",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    short_description:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    feature_snapshot: "./src/portfolio-snapshot3.jpeg",
+    technologies: ["html", "css", "javaScript", "github", "ruby", "Bootstrap"],
+    live_version: "https://www.portfolio.com/project2",
+    source_link: "https://www.github.com/rominana/multi-post-stories",
+  },
+
+  {
+    project_name: "Facebook 360",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    short_description:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    feature_snapshot: "./src/portfolio-snapshot4.jpeg",
+    technologies: ["html", "css", "javaScript", "github", "ruby", "Bootstrap"],
+    live_version: "https://www.portfolio.com/project3",
+    source_link: "https://www.github.com/rominana/facebook360",
+  },
+
+  {
+    project_name: "Multi Post Stories",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    short_description:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    feature_snapshot: "./src/portfolio-snapshot3.jpeg",
+    technologies: ["html", "css", "javaScript", "github", "ruby", "Bootstrap"],
+    live_version: "https://www.portfolio.com/project4",
+    source_link: "https://www.github.com/rominana/uber-navigation",
+  },
+];
+
+let dynamicHtmlContent = "";
+
+for (let i = 0; i < workData.length; i += 1) {
+  dynamicHtmlContent = `
+  <div class="projects">
+  <div>
+      <img class="card-picture" src="${workData[i].feature_snapshot}" alt="project snapshot"/>
+  </div>
+        <div>
+            <h2>${workData[i].project_name}</h2>
+                <div class="company">
+                <ul>
+                <li>Canopy</li>
+                <li>Back End Dev</li>
+                <li>2015</li>
+            </ul>
+            </div>
+                  <p>${workData[i].short_description}</p>
+                <div class="tags">
+                <ul>
+                <li><button type="button">html</button></li>
+                <li><button type="button">css</button></li>
+                <li><button type="button">javascript</button></li>
+            </ul>
+            </div>   
+                <div>
+                <button class="see-projects" type="button" onClick='showPopUp(${i})'>See Project</button>
+            </div>
+        </div>
+    </div>
+  </div>`;
+
+  document.getElementsByClassName("work-content")[0].innerHTML +=
+    dynamicHtmlContent;
+}
+
 /* ------------Form Validation-----*/
 const email = document.querySelector('.email');
 const button = document.querySelector('.submit');
