@@ -121,6 +121,12 @@ function myPopUpFunction(projectNumber) {
   return devTag;
 }
 
+function closePopUp() {
+  document.getElementsByTagName("body")[0].classList.remove("pop-up");
+  document.getElementsByClassName("work-content")[0].classList.remove("pop-up");
+  document.getElementById("pop-up").classList.remove("pop-up");
+}
+
 /* ------------Form Validation-----*/
 const email = document.querySelector('.email');
 const button = document.querySelector('.submit');
