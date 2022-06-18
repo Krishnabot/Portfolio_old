@@ -116,7 +116,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   background-color: white;
   width: 375px;
   height: 600px;
@@ -181,7 +181,6 @@ a:active {
   grid-auto-rows: 1fr;
   grid-auto-flow: row;
   grid-gap: 15px;
-  margin-bottom: 20px;
 }
 
 ul > li {
@@ -296,7 +295,7 @@ h2 {
   width: 120px;
 }
 
-.pop-up-buttons > button {
+.pop-up-btn > button {
   width: 150px;
 }
 
@@ -483,6 +482,16 @@ hr {
   padding-top: 12%;
 }
 
+.work-content {
+  display: grid;
+  grid-gap: 50px;
+  margin-bottom: 50px;
+}
+
+header.pop-up {
+  filter: blur(4px);
+}
+
 .work-content.pop-up {
   filter: blur(4px);
 }
@@ -514,16 +523,26 @@ body.pop-up {
 
 .popup-img {
   background-color: #efeff1;
+  margin: auto;
 }
 
 .popup-img > img {
   padding-left: 2rem;
   padding-right: 2rem;
   border-radius: 5%;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+
 }
 
 .pop-up-columns {
   margin-top: 1rem;
+}
+
+#pop-up .tags ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #pop-up .tags ul li {
@@ -534,7 +553,7 @@ body.pop-up {
   display: list-item;
 }
 
-.pop-up-buttons {
+.pop-up-btn {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -654,16 +673,16 @@ body.pop-up {
 
   .work {
     margin: auto;
-    grid-gap: 35px;
   }
 
   .projects {
-    width: 1000px;
+    width: 100%;
     height: 450px;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     transition: transform 1s;
+    margin-bottom: 2rem;
   }
 
   .projects:hover {
@@ -787,20 +806,24 @@ body.pop-up {
 
   .pop-up-columns {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 7fr 1fr;
   }
 
   #pop-up .tags > ul > li {
-    display: block;
+    display: inline-block;
+    margin-bottom: 5px;
   }
 
-  #pop-up-left-column {
+  #pop-up .tags ul li:nth-child(-n+3) {
+    display: block;
+}
+  .left-column {
     margin-right: 5px;
   }
 
-  .pop-up-buttons {
+  .pop-up-btn {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     height: 40px;
   }
 }

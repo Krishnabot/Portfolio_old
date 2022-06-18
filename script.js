@@ -143,7 +143,7 @@ function showPopUp(cardcount) {
 <div id="pop-up">
   <div>
       <div class="card">
-            <div class="card-content">
+            <div>
                 <div>
             <h2>${workData[cardcount].project_name}<i class="fa-solid fa-xmark close-pop-up" ></i></h2>
                 <div class="company">
@@ -160,16 +160,16 @@ function showPopUp(cardcount) {
                 <img class="card-picture" src="${workData[cardcount].feature_snapshot}"/>
             </div>
                     <div class="pop-up-columns">
-                        <div id="pop-up-left-column">
+                        <div class="left-column">
                         <p class="card-description">${paragraphDescription}</p>
                         </div>
-                        <div id="pop-up-right-column">
+                        <div class="right-column">
                         <div class="tags">
                 <ul>
                  ${devTag}
             </ul>
                           </div>  
-                        <div class="pop-up-buttons">
+                        <div class="pop-up-btn">
                             <button class="see-projects"  type="button">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
                             <button class="see-projects" type="button">See Source <i class="fa-brands fa-github"></i></button>
                     </div>
