@@ -112,6 +112,15 @@ for (let i = 0; i < workData.length; i += 1) {
     dynamicHtmlContent;
 }
 
+function myPopUpFunction(projectNumber) {
+  let devTag = "";
+  for (let i = 0; i < workData[projectNumber].technologies.length; i++) {
+    devTag += `<li><button type="button">${workData[projectNumber].technologies[i]}</button></li>
+ `;
+  }
+  return devTag;
+}
+
 /* ------------Form Validation-----*/
 const email = document.querySelector('.email');
 const button = document.querySelector('.submit');
