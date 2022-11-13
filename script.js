@@ -28,51 +28,51 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 /* ------------Pop up--------------  */
 const workData = [
   {
-    project_name: 'Tonic',
+    project_name: 'Space Travellers Hub ',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      'A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
     short_description:
-      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    feature_snapshot: './src/project-1.jpeg',
-    technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
-    live_version: 'https://krishnabot.github.io/Portfolio/',
-    source_link: 'https://github.com/Krishnabot',
+      'A web application for a company that provides commercial and scientific space travel services.',
+    feature_snapshot: './src/Space-Traveller-Hub_snapshot.png',
+    technologies: ['html', 'css', 'javaScript', 'github', 'Bootstrap'],
+    live_version: 'https://genuine-crostata-d7ce29.netlify.app/Rockets',
+    source_link: 'https://github.com/Krishnabot/Space-Traveler-s-Hub',
   },
 
   {
-    project_name: 'Multi Post Stories',
+    project_name: 'Coin Tracker',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      'Built with React and Redux, Coin Tracker provides real time market-based information and statistics about the top 52 cryptocurrencies in the market.',
     short_description:
-      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    feature_snapshot: './src/portfolio-snapshot3.jpeg',
-    technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
-    live_version: 'https://krishnabot.github.io/Portfolio/',
-    source_link: 'https://github.com/Krishnabot',
+      ' An updates  of crytocoins about their market and health; no accounts or sign-ups required.',
+    feature_snapshot: './src/cointracker_snapshot.png',
+    technologies: ['html', 'css', 'javaScript', 'github', 'Bootstrap'],
+    live_version: 'https://zingy-eclair-341d70.netlify.app/',
+    source_link: 'https://github.com/Krishnabot/CoinTrackers',
   },
 
   {
-    project_name: 'Facebook 360',
+    project_name: 'Foodie App',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      'A Simple Menu Website. where most Popular American French and Chinese Menu are can be found along with their ingredients and recipe.',
     short_description:
-      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    feature_snapshot: './src/portfolio-snapshot4.jpeg',
-    technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
-    live_version: 'https://krishnabot.github.io/Portfolio/',
-    source_link: 'https://github.com/Krishnabot',
+      ' A daily selection of personalized Menus; no accounts or sign-ups required.',
+    feature_snapshot: './src/Foodie_App_snapshot.png',
+    technologies: ['html', 'css', 'javaScript', 'github', 'API', 'Bootstrap'],
+    live_version: 'https://krishnabot.github.io/JavaScript-CapStone/dist/',
+    source_link: 'https://github.com/Krishnabot/JavaScript-CapStone',
   },
 
   {
-    project_name: 'Multi Post Stories',
+    project_name: 'Poetry Slam',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      'A Informative Conference website of Poetry Slam event in NewYork , where all important information regarding the program can be accessed via home page and about page from both desktop and mobile devices',
     short_description:
-      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    feature_snapshot: './src/portfolio-snapshot3.jpeg',
-    technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
-    live_version: 'https://krishnabot.github.io/Portfolio/',
-    source_link: 'https://github.com/Krishnabot',
+      ' A responsive Website containing about and home page of POETRY SLAM 2020',
+    feature_snapshot: './src/poetry_slam_snapshot.png',
+    technologies: ['html', 'css', 'javaScript', 'github', 'Bootstrap'],
+    live_version: 'https://krishnabot.github.io/Capstone-Project-Poetry-Page/',
+    source_link: 'https://github.com/Krishnabot/Capstone-Project-Poetry-Page',
   },
 ];
 
@@ -138,6 +138,8 @@ function showPopUp(cardcount) {
   }
 
   const devTag = myPopUpFunction(cardcount);
+  const liveVersion = workData[cardcount].live_version;
+  const sourceLink = workData[cardcount].source_link;
 
   const popUpHtml = `
 <div id="pop-up">
@@ -170,8 +172,8 @@ function showPopUp(cardcount) {
             </ul>
                           </div>  
                         <div class="pop-up-btn">
-                            <button class="see-projects"  type="button">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-                            <button class="see-projects" type="button">See Source <i class="fa-brands fa-github"></i></button>
+                            <button class="see-projects"  type="button"><a href ="${liveVersion}">See Live </a> <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                            <button class="see-projects" type="button"><a href = "${sourceLink}">See Source </a> <i class="fa-brands fa-github"></i></button>
                     </div>
                 </div>
             </div>
