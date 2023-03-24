@@ -34,7 +34,7 @@ const workData = [
     short_description:
       'A web application for a company that provides commercial and scientific space travel services.',
     feature_snapshot: './src/Space-Traveller-Hub_snapshot.png',
-    technologies: ['html', 'css', 'javaScript', 'github', 'Bootstrap'],
+    technologies: ['React', 'Redux', 'javaScript', 'github', 'RESTful API'],
     live_version: 'https://genuine-crostata-d7ce29.netlify.app/Rockets',
     source_link: 'https://github.com/Krishnabot/Space-Traveler-s-Hub',
   },
@@ -46,7 +46,7 @@ const workData = [
     short_description:
       ' An updates  of crytocoins about their market and health; no accounts or sign-ups required.',
     feature_snapshot: './src/cointracker_snapshot.png',
-    technologies: ['html', 'css', 'javaScript', 'github', 'Bootstrap'],
+    technologies: ['React', 'Redux', 'javaScript', 'github', 'RESTful API'],
     live_version: 'https://zingy-eclair-341d70.netlify.app/',
     source_link: 'https://github.com/Krishnabot/CoinTrackers',
   },
@@ -58,7 +58,7 @@ const workData = [
     short_description:
       ' A daily selection of personalized Menus; no accounts or sign-ups required.',
     feature_snapshot: './src/Foodie_App_snapshot.png',
-    technologies: ['html', 'css', 'javaScript', 'github', 'API', 'Bootstrap'],
+    technologies: ['JavaScipt', 'css', 'Html', 'github', 'API', 'Bootstrap'],
     live_version: 'https://krishnabot.github.io/JavaScript-CapStone/dist/',
     source_link: 'https://github.com/Krishnabot/JavaScript-CapStone',
   },
@@ -70,15 +70,31 @@ const workData = [
     short_description:
       ' A responsive Website containing about and home page of POETRY SLAM 2020',
     feature_snapshot: './src/poetry_slam_snapshot.png',
-    technologies: ['html', 'css', 'javaScript', 'github', 'Bootstrap'],
+    technologies: ['JavaScript', 'css', 'html', 'github', 'Bootstrap'],
     live_version: 'https://krishnabot.github.io/Capstone-Project-Poetry-Page/',
     source_link: 'https://github.com/Krishnabot/Capstone-Project-Poetry-Page',
+  },
+  {
+    project_name: 'Expense Tracker ',
+    description:
+      'A mobile web application built with Ruby on rails where users can manage their budget: Users have a list of transactions associated with a category so that users can keep track of their expenses on specific category',
+    short_description:
+      'A mobile web application where users can track their expenses and  manage their budget',
+    feature_snapshot: './src/expense-tracker_snapshot.png',
+    technologies: ['Ruby', 'Rails', 'Postgresql', 'github', 'scss'],
+    live_version: 'https://expense-tracker-i4p6.onrender.com/',
+    source_link: 'https://github.com/Krishnabot/Expense-Tracker',
   },
 ];
 
 let dynamicHtmlContent = '';
 
 for (let i = 0; i < workData.length; i += 1) {
+  const techButtons = workData[i].technologies
+    .slice(0, 3)
+    .map((tech) => `<li><button type="button">${tech}</button></li>`)
+    .join('');
+
   dynamicHtmlContent = `
   <div class="projects">
   <div>
@@ -96,9 +112,7 @@ for (let i = 0; i < workData.length; i += 1) {
                   <p>${workData[i].short_description}</p>
                 <div class="tags">
                 <ul>
-                <li><button type="button">html</button></li>
-                <li><button type="button">css</button></li>
-                <li><button type="button">javascript</button></li>
+                ${techButtons}
             </ul>
             </div>   
                 <div>
